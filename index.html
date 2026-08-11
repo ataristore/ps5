@@ -2,201 +2,64 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>بلايستيشن 5 | PlayStation 5</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>سنتر اتاري | Atari Center</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Cairo', sans-serif;
-        }
-
         body {
-            background-color: #0d0f18;
-            color: #ffffff;
-            overflow-x: hidden;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 8%;
-            background: rgba(13, 15, 24, 0.95);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            border-bottom: 1px solid rgba(0, 112, 243, 0.2);
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: 900;
-            color: #0070f3;
-            letter-spacing: 1px;
-        }
-
-        .logo span {
+            margin: 0;
+            background: #000;
             color: #fff;
+            font-family: 'Cairo', sans-serif;
+            text-align: center;
         }
-
-        nav a {
-            color: #b0b3c6;
-            text-decoration: none;
-            margin-left: 25px;
-            font-weight: 600;
-            transition: 0.3s;
-        }
-
-        nav a:hover {
-            color: #0070f3;
-        }
-
         .hero {
-            height: 100vh;
+            height: 60vh;
+            background: url('https://raw.githubusercontent.com/ataristore/ps5/main/background.jpg') no-repeat center center/contain;
+            background-color: #f0f0f0;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 0 20px;
-            background: linear-gradient(135deg, rgba(13,15,24,0.85), rgba(10,13,20,0.95)), url('https://images.unsplash.com/photo-1606813907291-d86efa9b94db?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            justify-content: flex-end;
+            padding-bottom: 20px;
         }
-
-        .hero h1 {
-            font-size: 52px;
-            margin-bottom: 20px;
-            font-weight: 900;
+        .btn-container {
+            padding: 50px;
         }
-
-        .hero h1 span {
-            color: #0070f3;
-            text-shadow: 0 0 25px rgba(0, 112, 243, 0.5);
-        }
-
-        .hero p {
-            font-size: 18px;
-            color: #b0b3c6;
-            max-width: 650px;
-            margin-bottom: 30px;
-            line-height: 1.6;
-        }
-
         .btn {
-            display: inline-block;
-            padding: 14px 35px;
-            background: #0070f3;
-            color: #ffffff;
-            font-weight: 700;
-            border-radius: 30px;
-            text-decoration: none;
+            padding: 20px 60px;
+            font-size: 24px;
+            background: #ff3e3e;
+            border: none;
+            color: #fff;
+            border-radius: 50px;
+            cursor: pointer;
             transition: 0.3s;
-            box-shadow: 0 0 20px rgba(0, 112, 243, 0.4);
+            box-shadow: 0 0 20px rgba(255, 62, 62, 0.5);
         }
-
         .btn:hover {
-            background: #005bb5;
-            transform: translateY(-3px);
-            box-shadow: 0 0 30px rgba(0, 112, 243, 0.6);
-        }
-
-        .features {
-            padding: 90px 8%;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            background: #111422;
-        }
-
-        .card {
-            background: #181c2e;
-            padding: 40px 25px;
-            border-radius: 18px;
-            text-align: center;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            border-color: #0070f3;
-            box-shadow: 0 10px 30px rgba(0, 112, 243, 0.15);
-        }
-
-        .card i {
-            font-size: 45px;
-            color: #0070f3;
-            margin-bottom: 20px;
-        }
-
-        .card h3 {
-            font-size: 22px;
-            margin-bottom: 12px;
-        }
-
-        .card p {
-            color: #b0b3c6;
-            font-size: 15px;
-            line-height: 1.5;
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px;
-            background: #0d0f18;
-            color: #b0b3c6;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-            font-size: 14px;
-        }
-
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 36px; }
-            header { padding: 20px 5%; }
+            background: #ff1a1a;
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="logo">PlayStation <span>5</span></div>
-        <nav>
-            <a href="#home">الرئيسية</a>
-            <a href="#features">المميزات</a>
-            <a href="#contact">الدعم</a>
-        </nav>
-    </header>
+    <div class="hero">
+        <!-- الصورة المرفقة ستظهر هنا -->
+    </div>
 
-    <section id="home" class="hero">
-        <h1>عالم جديد من اللعب مع <span>PS5</span></h1>
-        <p>اختبر سرعات فائقة مع وحدة تخزين SSD مخصصة، إحساس غامر بفضل الاستجابة اللمسية، تكنولوجيا الصوت ثلاثي الأبعاد، وجيل جديد مذهل من ألعاب بلايستيشن.</p>
-        <a href="#features" class="btn">اكتشف القدرات</a>
-    </section>
+    <div class="btn-container">
+        <h1>قائمة التهكير والاستغلال</h1>
+        <!-- اضف اسم ملف الـ payload الخاص بك هنا -->
+        <button class="btn" onclick="runPayload('payload.js')">RUN EXPLOIT</button>
+    </div>
 
-    <section id="features" class="features">
-        <div class="card">
-            <i class="fas fa-bolt"></i>
-            <h3>سرعة فائقة الخيال</h3>
-            <p>قوة وحدات المعالجة المركزية (CPU) و(GPU) ومعالج الرسوميات المخصص تضفي قواعد جديدة كلياً على ألعاب بلايستيشن.</p>
-        </div>
-        <div class="card">
-            <i class="fas fa-gamepad"></i>
-            <h3>ألعاب مذهلة</h3>
-            <p>استمتع برسومات مذهلة وتجارب لعب مبتكرة وجديدة كلياً خصيصاً لجيل بلايستيشن الخامس.</p>
-        </div>
-        <div class="card">
-            <i class="fas fa-volume-high"></i>
-            <h3>صوت ثلاثي الأبعاد</h3>
-            <p>انغمس في مناظر صوتية تجعلك تشعر وكأن الأصوات تحيط بك من كل الاتجاهات عبر سماعات الرأس المتوافقة.</p>
-        </div>
-    </section>
-
-    <footer id="contact">
-        <p>جميع حقوق الطبع والنشر محفوظة &copy; 2026 - PlayStation 5 Store</p>
-    </footer>
-
+    <script>
+        function runPayload(payloadName) {
+            alert('جاري تشغيل: ' + payloadName);
+            // هذا الجزء سيقوم بتنفيذ ملف الـ JS الخاص بالتهكير
+            var script = document.createElement('script');
+            script.src = payloadName;
+            document.body.appendChild(script);
+        }
+    </script>
 </body>
 </html>
